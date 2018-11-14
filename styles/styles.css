@@ -181,8 +181,7 @@ body {
 .wrapper {
   width: 90%;
   max-width: 1080px;
-  margin: 0 auto;
-  text-align: center; }
+  margin: 0 auto; }
 
 header {
   color: #eef0f2;
@@ -253,20 +252,20 @@ input[type=button]:hover {
   font-family: serif;
   margin: 20px 0; }
 
-.switch-field {
-  padding: 40px; }
+.question {
+  padding: 15px 20px; }
 
 /* .switch-title {
   margin-bottom: 6px;
 } */
-.switch-field input {
+.question input {
   position: absolute;
   opacity: 0.01; }
 
-.switch-field label {
+.question label {
   display: inline-block;
   width: 130px;
-  /* 	margin: 0; */
+  margin: 0;
   background-color: #e4e4e4;
   color: black;
   font-size: 14px;
@@ -274,15 +273,11 @@ input[type=button]:hover {
   padding: 10px 20px;
   border: 1px solid black; }
 
-.switch-field label:hover {
+.question label:hover {
   cursor: pointer;
   background: #A5DC86; }
 
-.switch-field input:focus + label {
-  background: blue;
-  color: red; }
-
-.switch-field input:checked + label {
+.question input:checked + label {
   background: green;
   color: white;
   -webkit-box-shadow: none;

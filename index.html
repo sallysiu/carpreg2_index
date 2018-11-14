@@ -9,177 +9,143 @@
 
 <body>
 	<header>
-		<h1>Symptoms Probability Calculator</h1>
-		<h2>How likely are you to have X medical problem?</h2>
+		<h1>CARPREG II Risk Prediction Index</h1>
+		<h2>Determining Risk of Maternal Cardiac Complications </h2>
 	</header>
 
 
 	<main>
 
-		<form action="" name="test">
+		<section class="calculator wrapper">
 
-			<div class="switch-field">
-				<!-- <div class="switch-title">Three fields</div> -->
+			<form action="" name="test">
+				<div class="questions">
+					<div class="question">
+						<div>1. Prior cardiac events or arrhythmias</div>
+					
+						<input type="radio" id="q1_choice1" name="q1" value="0">
+						<label for="q1_choice1">No</label>
 
-				<input type="radio" id="switch_3_first" name="switch_3" value="yes">
-				<label for="switch_3_first">One</label>
-
-				<input type="radio" id="switch_3_second" name="switch_3" value="maybe">
-				<label for="switch_3_second">Two</label>
-
-				<input type="radio" id="switch_3_third" name="switch_3" value="no">
-				<label for="switch_3_third">Three</label>
-
-
-				<br>
-				<br>
-				<input type="radio" id="switch_2_first" name="switch_2" value="yes">
-				<label for="switch_2_first">A</label>
+						<input type="radio" id="q1_choice2" name="q1" value="3">
+						<label for="q1_choice2">Yes +3</label>
+					
+					</div>
+					
+					<div class="question ">
+						<div>2. Baseline NYHA II-IV cyanosis</div>
 				
-				<input type="radio" id="switch_2_second" name="switch_2" value="maybe">
-				<label for="switch_3_second">B</label>
-				
-
-				<br><br>
-				
-				<input type="radio" id="switch_r_first" name="switch_r" value="yes">
-				<label for="switch_r_first">i</label>
-				
-				<input type="radio" id="switch_r_second" name="switch_r" value="maybe">
-				<label for="switch_r_second">ii</label>
-				
-				<input type="radio" id="switch_r_third" name="switch_r" value="no">
-				<label for="switch_r_third">iii</label>
-
-
-
-			</div>
-
-		</form>
-
-
-
-
-		<form name="selectForm">
-			<section class="questions wrapper">
-
-				<h3>Question 1</h3>
-				<p>Are you a Dementor?</p>
-
-				<input type="radio" id="q1_choice1" name="q1" value="1">
-				<label for="q1_choice1">Yes</label>
-
-				<input type="radio" id="q1_choice2" name="q1" value="0" checked="true">
-				<label for="q1_choice2">No</label>
+						<input type="radio"  id="q2_choice1" name="q2" value="0">
+						<label for="q2_choice1">No</label>
+						
+						<input type="radio" id="q2_choice2" name="q2" value="3">
+						<label for="q2_choice2">Yes +3</label>
+					
+					</div>
 	
-
-				<h3>Question 2</h3>
-				<p>Are you frequently an inverted triangle?</p>
-
-				<input type="radio" id="q2_choice1" name="q2" value="1">
-				<label for="q2_choice1">Yes</label>
-
-				<input type="radio" id="q2_choice2" name="q2" value="0" checked="true">
-				<label for="q2_choice2">No</label>
+					<div class="question">
+						<div>3. Mechanical valve</div>
+						
+						<input type="radio" id="q3_choice1" name="q3" value="0">
+						<label for="q3_choice1">No</label>
+		
+						<input type="radio" id="q3_choice2" name="q3" value="3">
+						<label for="q3_choice2">Yes +3</label>
+		
+					</div>
 	
-
-				<h3>Question 3</h3>
-				<p>Does your bellybutton smell like pickles?</p>
-
-				<input type="radio" id="q3_choice1" name="q3" value="2">
-				<label for="q3_choice1">Yes</label>
-
-				<input type="radio" id="q3_choice2" name="q3" value="0" checked="true">
-				<label for="q3_choice2">No</label>
+					<div class="question">
+						<div>4. Ventricular dysfunction</div>
+					
+						<input type="radio" id="q4_choice1" name="q4" value="0">
+						<label for="q4_choice1">No</label>
+						
+						<input type="radio" id="q4_choice2" name="q4" value="2">
+						<label for="q4_choice2">Yes +2</label>
+					
+					</div>
+					
+					
+					<div class="question ">
+						<div>5. High risk left-sided valve disease/left ventricular outflow tract obstruction</div>
+					
+						<input type="radio" id="q5_choice1" name="q5" value="0">
+						<label for="q5_choice1">No</label>
+						
+						<input type="radio" id="q5_choice2" name="q5" value="2">
+						<label for="q5_choice2">Yes +2</label>
+					
+					</div>
+					
+					<div class="question">
+						<div>6. Pulmonary hypertension</div>
+					
+						<input type="radio" id="q6_choice1" name="q6" value="0">
+						<label for="q6_choice1">No</label>
+						
+						<input type="radio" id="q6_choice2" name="q6" value="2">
+						<label for="q6_choice2">Yes +2</label>
+					
+					</div>
 	
-
-				<h3>Question 4</h3>
-				<p>Eat garbage sandwich or lick the bus seats?</p>
-
-				<input type="radio" id="q4_choice1" name="q4" value="1">
-				<label for="q4_choice1">I love garbage</label>
-
-				<input type="radio" id="q4_choice2" name="q4" value="0" checked="true">
-				<label for="q4_choice2">Lick all the bus seats</label>
+					<div class="question">
+						<div>7. Coronary artery disease</div>
+						
+						<input type="radio" id="q7_choice1" name="q7" value="0">
+						<label for="q7_choice1">No</label>
+						
+						<input type="radio" id="q7_choice2" name="q7" value="3">
+						<label for="q7_choice2">Yes +3</label>
 	
-
-				<h3>Question 5</h3>
-				<p>Do you shower with your shoes on?</p>
+					</div>
 	
-				<input type="radio" id="q5_choice1" name="q5" value="1">
-				<label for="q5_choice1">Yes</label>
+					<div class="question">
+						<div>8. High risk aortopathy</div>
 	
-				<input type="radio" id="q5_choice2" name="q5" value="0" checked="true">
-				<label for="q5_choice2">No</label>
+						<input type="radio" id="q8_choice1" name="q8" value="0">
+						<label for="q8_choice1">No</label>
+						
+						<input type="radio" id="q8_choice2" name="q8" value="2">
+						<label for="q8_choice2">Yes +2</label>
 	
-
-				<h3>Question 6</h3>
-				<p>Do you like bananas in smoothies?</p>
-
-				<input type="radio" id="q6_choice1" name="q6" value="10">
-				<label for="q6_choice1">Of course</label>
-
-				<input type="radio" id="q6_choice2" name="q6" value="0" checked="true">
-				<label for="q6_choice2">No way</label>
-
-				
-				<h3>Question 7</h3>
-				<p>African or European Swallow?</p>
-				
-				<input type="radio" id="q7_choice1" name="q7" value="1">
-				<label for="q7_choice1">African</label>
-				
-				<input type="radio" id="q7_choice2" name="q7" value="0" checked="true">
-				<label for="q7_choice2">European</label>
+					</div>
 	
-
-				<h3>Question 8</h3>
-				<p>Pantaloon or baboon?</p>
-
-				<input type="radio" id="q8_choice1" name="q8" value="1">
-				<label for="q8_choice1">Pantaloon</label>
-
-				<input type="radio" id="q8_choice2" name="q8" value="0" checked="true">
-				<label for="q8_choice2">Baboon</label>
 	
-
-				<h3>Question 9</h3>
-				<p>Is your hand bigger than your face?</p>
-
-				<input type="radio" id="q9_choice1" name="q9" value="1">
-				<label for="q9_choice1">Yes</label>
-
-				<input type="radio" id="q9_choice2" name="q9" value="0" checked="true">
-				<label for="q9_choice2">No</label>
+					<div class="question ">
+						<div>9. No prior cardiac intervention</div>
 	
-
-				<h3>Question 10</h3>
-				<p>Coke or Pepsi or neither?</p>
-
-				<input type="radio" id="q10_choice1" name="q10" value="3">
-				<label for="q10_choice1">Coke</label>
-
-				<input type="radio" id="q10_choice2" name="q10" value="2">
-				<label for="q10_choice2">Pepsi</label>
-
-				<input type="radio" id="q10_choice3" name="q10" value="-5" checked="true">
-				<label for="q10_choice3">Neither</label>
+						<input type="radio" id="q9_choice1" name="q9" value="0">
+						<label for="q9_choice1">No</label>
+						
+						<input type="radio" id="q9_choice2" name="q9" value="1">
+						<label for="q9_choice2">Yes +1</label>
 	
-			</section>
-			<section id="submit">
-				<!-- on click, loops through the values of the answers picked and calculates the sum and displays an answer based on the sum -->
-				<div class="wrapper">
-					<!-- <input type="button" value="Am I a monster!?" onclick="total_points();"> -->
-					<input type="submit" value="Am I a monster for real!?">
-					<p id="result"></p>
+					</div>
 	
+					<div class="question">
+						<div>Late pregnancy assessment</div>
+	
+						<input type="radio" id="q10_choice1" name="q10" value="0">
+						<label for="q10_choice1">No</label>
+						
+						<input type="radio" id="q10_choice2" name="q10" value="1">
+						<label for="q10_choice2">Yes +1</label>
+	
+					</div>
+
 				</div>
-			</section>
+				<div class="result">
+					<input type="submit" value="Submit">
+					<p id="result"></p>
+				</div>
+
 		</form>
+
+		</section>
+
 	</main>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="scripts/vanilla.js"></script>
+	<!-- <script src="scripts/vanilla.js"></script> -->
 	<script src="scripts/scripts.js"></script>
 
 

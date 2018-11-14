@@ -1,6 +1,6 @@
 
-.switch-field {
-	padding: 40px;
+.question {
+	padding: 15px 20px;
 	// overflow: hidden;
 }
 
@@ -8,21 +8,22 @@
   margin-bottom: 6px;
 } */
 
-.switch-field input {
+.question input {
 	position: absolute;
 	opacity: 0.01;
 	// clip-path: polygon(0 0)
 	// visibility: hidden;
 }
 
-.switch-field label {
+
+.question label {
 	// float: left;
 }
 
-.switch-field label {
+.question label {
 	display: inline-block;
 	width: 130px;
-/* 	margin: 0; */
+ 	margin: 0;
 	background-color: #e4e4e4;
 	color: black;
 	font-size: 14px;
@@ -31,18 +32,13 @@
 	border:	1px solid black;
 }
 
-.switch-field label:hover {
+.question label:hover {
 	cursor: pointer;
 	background: #A5DC86;
 }
 
-//DON'T NEED THIS
-.switch-field input:focus + label {
-	background: blue;
-	color: red;
-}
 
-.switch-field input:checked + label, {
+.question input:checked + label, {
 	background: green;
 	color: white;
 	-webkit-box-shadow: none;
