@@ -2,18 +2,20 @@
 
 body {
 	background: #136f63;
+	background: gainsboro;
 	margin: 0 auto;
 	font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
 }
 
 .wrapper {
-	width: 90%;
+	width: 80%;
 	max-width: 1080px;
 	margin: 0 auto;
 }
 
 header {
 	color: #eef0f2;
+	color: #136f63;
 	padding: 50px 0;
 	text-align: center;
 
@@ -21,9 +23,12 @@ header {
 
 form {
 	background: #eef0f2;
-	width: 55%;
+	background: whitesmoke;
+	background: white;
+	// width: 55%;
 	border-radius: 20px;
 	margin: 0 auto 100px;
+	padding: 20px 10%;
 
 }
 
@@ -60,40 +65,26 @@ label {
 	font-size: 15px;
 }
 
-input[type=button] {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 1px;
-	width: auto;
-	padding: 25px 35px;
-	border-radius: 20px;
-	border: none;
-	color: #eef0f2;
-	background: #0b3948;
-	border: 3px solid transparent;
-}
+// input[type=button] {
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//     appearance: none;
+//     font-weight: bolder;
+//     text-transform: uppercase;
+//     font-size: 20px;
+//     letter-spacing: 1px;
+// 	width: auto;
+// 	padding: 25px 35px;
+// 	border-radius: 20px;
+// 	border: none;
+// 	color: #eef0f2;
+// 	background: #0b3948;
+// 	border: 3px solid transparent;
+//}
 
 input[type=button]:hover {
 	color: #0b3948;
 	/* background: #eef0f2; */
 	background: white;
 	border: 3px solid #0b3948;
-}
-
-
-#submit {
-	/* background: darkgreen; */
-	/* height: 30vh; */
-	padding: 20px 0;
-}
-
-#result {
-	color: #0b3948;
-	font-size: 30px;
-	font-family: serif;
-	margin: 20px 0;
 }

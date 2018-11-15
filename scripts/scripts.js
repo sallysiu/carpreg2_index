@@ -33,7 +33,7 @@ App.formSubmit = function() {
 
 		event.preventDefault();
 
-		console.log('submitted')
+		// console.log('submitted')
 
 		let total = 0;
 		let questions_answered = 0;
@@ -41,37 +41,49 @@ App.formSubmit = function() {
 		for (let i = 1; i <= 10; i += 1) {
 			// let answer_num = (document.getElementsByTagName("input")).length;
 			// console.log(answer_num);
+
 			for (let j = 1; document.getElementById(`q${i}_choice${j}`); j += 1) {
 				// let exists = (document.getElementById("q" + i + "_choice" + j));
 				// console.log(exists);
 				if (document.getElementById(`q${i}_choice${j}`).checked) {
 					// console.log(((document.getElementById(`q${i}_choice${j}`)).name) + ": " + ((document.getElementById(`q${i}_choice${j}`)).value))
+					questions_answered += 1;
+					// console.log(questions_answered);
+
 					total += parseInt((document.getElementById(`q${i}_choice${j}`)).value);
-					questions += 1;
+
 				}
+
 			}
 			// console.log(`working total: ${total}`)
 		}
-		console.log(`final total: ${total}`)
+		// console.log(`final total: ${total}`)
+		// console.log(questions_answered)
 
+		if (questions_answered < 10) {
+			$("#result").html(`<p>Please answer all questions</p>`);
+		}
 
-
-
-		if (total <= 1) {
-			$("#result").html(`<p>You got ${total} points.</p>`);
-		}
-		else if (total == 2) {
-			$("#result").html(`<p>You got ${total} points</p>`);
-		}
-		else if (total ==  3) {
-			$("#result").html(`<p>You got ${total} points</p>`);
-		}
-		else if (total == 4) {
-			$("#result").html(`<p>You got ${total} points</p>`);
-		}
 		else {
-			$("#result").html(`<p>You got ${total} points, over 4 points </p>`);
+			if (total <= 1) {
+				$("#result").html(`<p>You got ${total} points.</p>`);
+			}
+			else if (total == 2) {
+				$("#result").html(`<p>You got ${total} points</p>`);
+			}
+			else if (total ==  3) {
+				$("#result").html(`<p>You got ${total} points</p>`);
+			}
+			else if (total == 4) {
+				$("#result").html(`<p>You got ${total} points</p>`);
+			}
+			else {
+				$("#result").html(`<p>You got ${total} points, over 4 points </p>`);
+			}
 		}
+
+
+
 
 	});
 
