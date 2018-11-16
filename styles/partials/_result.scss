@@ -19,3 +19,28 @@ input[type=submit] {
 	margin: 20px 0;
 	background: green;
 }
+
+
+
+.risk {
+	// border: 2px solid red;
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr;
+
+	// .wrapper {
+		div {
+			height: 20px;
+			margin: 0;
+			// border: 1px solid blue;
+			// text-align: center;
+		}
+	// }
+}
+
+.predictor {
+	// border: 1px solid green;
+
+	grid-row: span 2;
+	background: lightblue;
+	text-align: left;
+}
