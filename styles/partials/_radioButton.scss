@@ -1,13 +1,3 @@
-
-.question {
-	// padding: 15px 20px;
-	// overflow: hidden;
-}
-
-/* .switch-title {
-  margin-bottom: 6px;
-} */
-
 .question input {
 	position: absolute;
 	opacity: 0.01;
@@ -20,12 +10,10 @@ label {
 	font-size: 15px;
 }
 
-.question label {
-	float: left;
-}
 
 .question label {
-	display: inline-block;
+	float: left;
+	// display: inline-block;
 	width: 130px;
  	margin: 0;
 	background-color: #e4e4e4;
@@ -35,8 +23,6 @@ label {
 	padding: 10px 20px;
 	border-radius: 4px;
 	border:	1px solid rgba(0, 0, 0, 0.2);
-//	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-	// box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);	
 }
 
 .question label:hover {

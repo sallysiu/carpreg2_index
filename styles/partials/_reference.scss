@@ -31,14 +31,17 @@
 		}
 
 		&:hover {
-			// background: #e4e4e4;
-			// background: #A5DC86;
-			// background: #C9EAB6;
 			background: #D2EDC2;
+		}
+		&:focus {
+			background: red;
+		}
+		&:active {
+			background: blue;
 		}
 	}
 	.desktop {
-		display: none;
+		// display: none;
 	}
 }
 

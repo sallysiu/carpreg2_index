@@ -70,19 +70,19 @@ App.formSubmit = function() {
 			}
 			else if (total == 2) {
 				$('#points').html(`${total}`);
-				$("#result").html(`<p>You got  points</p>`);
+				$("#result").html(`<p>x% likelihood of cardiac complication</p>`);
 			}
 			else if (total ==  3) {
 				$('#points').html(`${total}`);
-				$("#result").html(`<p>You got ${total} points</p>`);
+				$("#result").html(`<p>x% likelihood of cardiac complication</p>`);
 			}
 			else if (total == 4) {
 				$('#points').html(`${total}`);
-				$("#result").html(`<p>You got ${total} points</p>`);
+				$("#result").html(`<p>x% likelihood of cardiac complication</p>`);
 			}
 			else {
 				$('#points').html(`${total}`);
-				$("#result").html(`<p>You got ${total} points, over 4 points </p>`);
+				$("#result").html(`<p>x% likelihood of cardiac complication</p>`);
 			}
 		}
 
