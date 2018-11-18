@@ -1,7 +1,6 @@
 const App = {};
 let total = 0;
-		//compare questions answered to number of questions
-let questions = 0;
+
 
 $(function () {
 	App.init();
@@ -61,23 +60,28 @@ App.formSubmit = function() {
 		// console.log(questions_answered)
 
 		if (questions_answered < 10) {
-			$("#result").html(`<p>Please answer all questions</p>`);
+			$("#result").html(`<p>Please answer all fields.</p>`);
 		}
 
 		else {
 			if (total <= 1) {
-				$("#result").html(`<p>You got ${total} points.</p>`);
+				$('#points').html(`${total}`);
+				$("#result").html(`<p>5% likelihood of cardiac complication</p>`);
 			}
 			else if (total == 2) {
-				$("#result").html(`<p>You got ${total} points</p>`);
+				$('#points').html(`${total}`);
+				$("#result").html(`<p>You got  points</p>`);
 			}
 			else if (total ==  3) {
+				$('#points').html(`${total}`);
 				$("#result").html(`<p>You got ${total} points</p>`);
 			}
 			else if (total == 4) {
+				$('#points').html(`${total}`);
 				$("#result").html(`<p>You got ${total} points</p>`);
 			}
 			else {
+				$('#points').html(`${total}`);
 				$("#result").html(`<p>You got ${total} points, over 4 points </p>`);
 			}
 		}

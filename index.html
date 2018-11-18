@@ -10,7 +10,7 @@
 <body>
 	<header>
 		<h1>CARPREG II Risk Prediction Index</h1>
-		<h2>Determining Risk of Maternal Cardiac Complications in Pregnant Women</h2>
+		<p>Determining Risk of Maternal Cardiac Complications in Pregnant Women</p>
 	</header>
 
 
@@ -18,6 +18,7 @@
 
 		<section class="">
 			<p>
+				Estimates the probability 
 				While the risk of maternal mortality in pregnant women with heart disease is rare, cardiac complications can occur and the risk of complications can be estimated by integrating general cardiac risk predictors, lesion-specific risk information, and factors related to process of care.
 			</p>
 
@@ -28,7 +29,7 @@
 		<section class="calculator">
 
 			<form action="" name="test ">
-				<div class="questions ">
+				<div class="questions">
 					<div class="question">
 						<div class="symptom">1. Prior cardiac events or arrhythmias</div>
 
@@ -174,8 +175,9 @@
 				</div>
 				<div class="result-and-content">
 					<input type="submit" value="Submit">
-					<h3>Result</h3>
-					<p id="result"></p>
+					<h2>Result:</h2>
+					<p id="points"></p>
+					<p id="result">Please answer all fields.</p>
 				</div>
 
 			</form>
@@ -183,7 +185,17 @@
 		</section>
 
 		<section class="risk">
-			<!-- <div class="wrapper"> -->
+			<h3>Formula</h3>
+			<p>Addition of the selected points</p>
+			<div class="risk-grid">
+				<div>
+					Criteria
+				</div>
+				<div></div>
+				<div>
+					Points
+				</div>
+
 				<div class="predictor">Prior cardiac events or arrhythmias</div>
 				<div>No</div>
 				<div>0</div>
@@ -254,6 +266,13 @@
 				<div>Yes</div>
 				<div>+1</div>
 			</div>
+
+			<div>
+				<h3>Interpretation</h3>
+				<div class="risk-grid"></div>
+
+			</div>
+
 
 		</section>
 
