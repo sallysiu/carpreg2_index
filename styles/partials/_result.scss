@@ -15,10 +15,13 @@ input[type=submit] {
 input[type=submit]:hover,
 input[type=submit]:focus {
 	text-decoration: underline;
+	background: #D2EDC2;
 	background: #A5DC86;
-	border: 1px solid black;
+	border: 1px solid #D2EDC2;
 	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
 	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	-webkit-box-shadow: 0 1px 3px#D2EDC2, 0 1px #D2EDC2;
+	box-shadow:  0 1px 3px #D2EDC2, 0 1px #D2EDC2;
 	cursor: pointer;
 }
 

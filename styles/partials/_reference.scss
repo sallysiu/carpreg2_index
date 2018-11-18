@@ -1,13 +1,44 @@
 .reference {
-	a {
-		border: 1px solid red;
-		display: block;
+	margin: 60px 0;
 
+	a {
+		display: block;
+		display: flex;
+		align-items: center;
+		border: 0.5px solid slategrey;
+		box-shadow: 2px 2px 5px grey;
+		border-radius: 10px;
+		padding: 20px 20px 20px 0;
+		padding-left: 20px;
+		
 		div {
-			background: lightblue;
+			flex: 0 1 auto;
+			
+			i {
+				font-size: 40px;
+				padding: 20px;
+				font-weight: lighter;
+
+			}
+
+			
+			
 			span {
 				font-style: italic;
 			}
+
+
+		}
+
+		&:hover {
+			// background: #e4e4e4;
+			// background: #A5DC86;
+			// background: #C9EAB6;
+			background: #D2EDC2;
 		}
 	}
+	.desktop {
+		display: none;
+	}
 }
+
