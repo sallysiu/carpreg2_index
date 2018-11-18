@@ -48,7 +48,8 @@ input[type=submit]:focus {
 }
 
 
-.risk-grid {
+.risk-formula-grid,
+.risk-result-grid {
 	margin: 40px 0;
 	// border: 2px solid red;
 	display: grid;
@@ -58,9 +59,9 @@ input[type=submit]:focus {
 		div {
 //			margin: 0;
 			// border: 1px solid blue;
-			border-bottom: lightgrey 1px solid;
+			border-bottom: 1px solid lightgrey;
 			// text-align: center;
-//			background: lightcoral;
+			// background: lightcoral;
 			padding: 10px 20px;
 		}
 		// div:nth-of-type(2) {
@@ -68,17 +69,50 @@ input[type=submit]:focus {
 		// 	grid-row: span 2;
 		// }
 	// }
+	.risk-formula-grid div:nth-of-type(1),
+	.risk-formula-grid div:nth-of-type(3) {
+		font-weight: bold;
+	}
 }
-
-.risk-grid div:nth-of-type(1),
-.risk-grid div:nth-of-type(3) {
-	font-weight: bold;
-}
+ 
 
 div.predictor {
 	grid-row: span 2;
 	text-align: left;
 	padding: 30px 20px;
-
 }
 
+.risk-result-grid {
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+
+	div {
+		border-left: 1px solid lightgrey;
+		text-align: center;
+	}
+
+	& :nth-child(1),
+	& :nth-child(7) {
+		font-weight: bold;
+		text-align: left;
+		border-left: none;
+	}
+}
+
+.risk-result-grid.mobile {
+	display: none;
+	grid-template-columns: 1fr 1fr;
+		div	{
+			text-align: center;
+			font-weight: normal;
+			border-left: none;
+
+			&:nth-of-type(2n) {
+				border-left: 1px solid lightgrey;
+			}
+		}
+
+		& :nth-child(1),
+		& :nth-child(2) {
+			font-weight: bold;
+		}
+}

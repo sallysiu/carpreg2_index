@@ -1,0 +1,13 @@
+.reference {
+	a {
+		border: 1px solid red;
+		display: block;
+
+		div {
+			background: lightblue;
+			span {
+				font-style: italic;
+			}
+		}
+	}
+}
