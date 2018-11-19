@@ -14,17 +14,11 @@ App.init = function() {
 		$(this).prop("checked", true)
 	}); 
 
-	// $('input').on("click", function (event) {
-	// 	console.log(this.id)
-	// })
-
 	App.formSubmit();
 }
 
 
-
-
-
+// loops through the user's answer choices and calculates the total
 App.formSubmit = function() {
 	// console.log('formSubmit called')
 
@@ -38,16 +32,11 @@ App.formSubmit = function() {
 		let questions_answered = 0;
 
 		for (let i = 1; i <= 10; i += 1) {
-			// let answer_num = (document.getElementsByTagName("input")).length;
-			// console.log(answer_num);
 
 			for (let j = 1; document.getElementById(`q${i}_choice${j}`); j += 1) {
-				// let exists = (document.getElementById("q" + i + "_choice" + j));
-				// console.log(exists);
+
 				if (document.getElementById(`q${i}_choice${j}`).checked) {
-					// console.log(((document.getElementById(`q${i}_choice${j}`)).name) + ": " + ((document.getElementById(`q${i}_choice${j}`)).value))
 					questions_answered += 1;
-					// console.log(questions_answered);
 
 					total += parseInt((document.getElementById(`q${i}_choice${j}`)).value);
 
@@ -59,30 +48,33 @@ App.formSubmit = function() {
 		// console.log(`final total: ${total}`)
 		// console.log(questions_answered)
 
+
+		// checks to see if all the questions have been answered
 		if (questions_answered < 10) {
 			$("#result").html(`<p>Please answer all fields.</p>`);
 		}
 
+		// displays calculated sum and associated risk
 		else {
 			if (total <= 1) {
 				$('#points').html(`${total}`);
-				$("#result").html(`<p>5% likelihood of cardiac complication</p>`);
+				$("#result").html(`<p>5% risk of cardiac complications</p>`);
 			}
 			else if (total == 2) {
 				$('#points').html(`${total}`);
-				$("#result").html(`<p>x% likelihood of cardiac complication</p>`);
+				$("#result").html(`<p>10% risk of cardiac complications</p>`);
 			}
 			else if (total ==  3) {
 				$('#points').html(`${total}`);
-				$("#result").html(`<p>x% likelihood of cardiac complication</p>`);
+				$("#result").html(`<p>15% risk of cardiac complications</p>`);
 			}
 			else if (total == 4) {
 				$('#points').html(`${total}`);
-				$("#result").html(`<p>x% likelihood of cardiac complication</p>`);
+				$("#result").html(`<p>22% risk of cardiac complication<s/p>`);
 			}
 			else {
 				$('#points').html(`${total}`);
-				$("#result").html(`<p>x% likelihood of cardiac complication</p>`);
+				$("#result").html(`<p>41% risk of cardiac complications</p>`);
 			}
 		}
 

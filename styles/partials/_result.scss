@@ -1,8 +1,6 @@
 
 
 input[type=submit] {
-	/* background: darkgreen; */
-	/* height: 30vh; */
 	padding: 10px 20px;
 	font-size: 20px;
 	float: right;
@@ -33,7 +31,6 @@ input[type=submit]:focus {
 }
 
 #points {
-	// height: 30px;
 	font-size: 40px;
 	display: block;
 	font-weight: bold;
@@ -44,17 +41,16 @@ input[type=submit]:focus {
 #result {
 	font-size: 20px;
 	margin: 0;
+
 }
 
 
 .risk-formula-grid,
 .risk-result-grid {
 	margin: 40px 0;
-	// border: 2px solid red;
 	display: grid;
 	color: #232323;
 	grid-template-columns: 4fr 1fr 1fr; 
-	// .wrapper {
 		div {
 			border-bottom: 1px solid lightgrey;
 			padding: 10px 20px;
@@ -103,7 +99,6 @@ div.predictor {
 				border-left: 1px solid lightgrey;
 			}
 		}
-
 		& :nth-child(1),
 		& :nth-child(2) {
 			font-weight: bold;

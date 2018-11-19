@@ -1,8 +1,4 @@
-
-
 body {
-	background: #136f63;
-
 	background: #eef0f2;
 	margin: 0 auto;
 	font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
@@ -16,10 +12,15 @@ body {
 }
 
 header {
-	// background: #eef0f2;
 	color: #136f63;
 	padding: 50px 0;
 	text-align: center;
+
+	p {
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 22px;
+	}
 
 }
 
@@ -52,13 +53,6 @@ h3 {
 
 p {
 	margin: 0;
-	line-height: 20px;
-}
-
-
-
-.questions p {
-	margin: 5px 0 10px;
 	line-height: 20px;
 }
 

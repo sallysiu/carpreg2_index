@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CARPREG II Risk Index</title>
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
 	 crossorigin="anonymous">
@@ -18,11 +19,10 @@
 
 	<main class="wrapper">
 
-		<section>
+		<section class="intro">
 			<p> 
-				While the risk of maternal mortality in pregnant women with heart disease is rare, cardiac complications can occur and the risk of complications can be estimated by integrating general cardiac risk predictors, lesion-specific risk information, and factors related to process of care.
+				Prediction of maternal cardiac complications in women with heart disease requires integration of clinical information, echocardiographic parameters, the specific maternal cardiac lesion, and process of care variables. 
 			</p>
-
 		</section>
 
 		<section class="calculator">
@@ -176,7 +176,7 @@
 					<input type="submit" value="Submit">
 					<h2>Result:</h2>
 					<p id="points"></p>
-					<p id="result">Please answer all fields.</p>
+					<p id="result"></p>
 				</div>
 
 			</form>
@@ -198,70 +198,60 @@
 				<div class="predictor">Prior cardiac events or arrhythmias</div>
 				<div>No</div>
 				<div>0</div>
-				<!-- <div></div> -->
 				<div>Yes</div>
 				<div>+3</div>
 
 				<div class="predictor">Baseline NYHAII-IV or cyanosis</div>
 				<div>No</div>
 				<div>0</div>
-				<!-- <div></div> -->
 				<div>Yes</div>
 				<div>+3</div>
 
 				<div class="predictor">Mechanical valve</div>
 				<div>No</div>
 				<div>0</div>
-				<!-- <div></div> -->
 				<div>Yes</div>
 				<div>+3</div>
 
 				<div class="predictor">Ventricular dysfunction</div>
 				<div>No</div>
 				<div>0</div>
-				<!-- <div></div> -->
 				<div>Yes</div>
 				<div>+2</div>
 
 				<div class="predictor">High risk left-sided valve disease/left ventricular outflow tract obstruction</div>
 				<div>No</div>
 				<div>0</div>
-				<!-- <div></div> -->
 				<div>Yes</div>
 				<div>+2</div>
 				
 				<div class="predictor">Pulmonary hypertension</div>
 				<div>No</div>
 				<div>0</div>
-				<!-- <div></div> -->
 				<div>Yes</div>
 				<div>+2</div>
 				
 				<div class="predictor">Coronary artery disease</div>
 				<div>No</div>
 				<div>0</div>
-				<!-- <div></div> -->
 				<div>Yes</div>
 				<div>+3</div>
 				
 				<div class="predictor">High risk aortopathy</div>
 				<div>No</div>
 				<div>0</div>
-				<!-- <div></div> -->
 				<div>Yes</div>
 				<div>+2</div>
 
 				<div class="predictor">No prior cardiac intervention</div>
 				<div>No</div>
 				<div>0</div>
-				<!-- <div></div> -->
 				<div>Yes</div>
 				<div>+1</div>
 				
 				<div class="predictor">Late pregnancy assessment</div>
 				<div>No</div>
 				<div>0</div>
-				<!-- <div></div> -->
 				<div>Yes</div>
 				<div>+1</div>
 			</div>
@@ -269,7 +259,7 @@
 			<div>
 				<h3>Interpretation</h3>
 				<div class="risk-result-grid desktop">
-					<div>CANPREG II Score</div>
+					<div>CARPREG II Score</div>
 					<div>0 - 1</div>
 					<div>2</div>
 					<div>3</div>
@@ -277,28 +267,33 @@
 					<div>>4</div>
 					<div>Risk of Cardiac Complications</div>
 					<div>5%</div>
-					<div></div>
-					<div></div>
-					<div>40%</div>
+					<div>10%</div>
+					<div>15%</div>
+					<div>22%</div>
 					<div>>41%</div>
 				</div>
 
 				<div class="risk-result-grid mobile">
-					<div>CANPREG II Score</div>
+					<div>CARPREG II Score</div>
 					<div>Risk of Cardiac Complications</div>
 					<div>0 - 1</div>
 					<div>5%</div>
 					<div>2</div>
-					<div></div>
+					<div>10%</div>
 					<div>3</div>
-					<div></div>
+					<div>15%</div>
 					<div>4</div>
-					<div>40%</div>
+					<div>22%</div>
 					<div>>4</div>
 					<div>>41%</div>
 				
 				</div>
-
+				<p>
+					While the risk of maternal mortality in pregnant women with heart disease is rare, cardiac complications can occur and
+					the risk of complications can be estimated by integrating general cardiac risk predictors, lesion-specific risk
+					information, and factors related to process of care. Careful cardiovascular clinical assessment remains teh foundation
+					of risk stratification of pregnant women with heart disease.
+				</p>
 
 
 
@@ -337,7 +332,6 @@
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/ionicons@4.4.7/dist/ionicons.js"></script>
-	<!-- <script src="scripts/vanilla.js"></script> -->
 	<script src="scripts/scripts.js"></script>
 
 

@@ -174,7 +174,6 @@ template {
   box-sizing: border-box; }
 
 body {
-  background: #136f63;
   background: #eef0f2;
   margin: 0 auto;
   font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
@@ -189,6 +188,10 @@ header {
   color: #136f63;
   padding: 50px 0;
   text-align: center; }
+  header p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px; }
 
 main {
   background: white;
@@ -216,10 +219,6 @@ p {
   margin: 0;
   line-height: 20px; }
 
-.questions p {
-  margin: 5px 0 10px;
-  line-height: 20px; }
-
 footer {
   padding: 15px 0;
   text-align: center;
@@ -229,21 +228,21 @@ footer {
   position: absolute;
   opacity: 0.01; }
 
-label {
-  margin-right: 25px;
-  font-size: 15px; }
-
 .question label {
   float: left;
   width: 130px;
+  font-size: 15px;
   margin: 0;
   background-color: #e4e4e4;
   color: #2f2f31;
   font-size: 14px;
   text-align: center;
   padding: 10px 20px;
-  border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.2); }
+  .question label:nth-of-type(2n) {
+    border-radius: 0 5px 5px 0; }
+  .question label:nth-of-type(2n+1) {
+    border-radius: 5px 0 0 5px; }
 
 .question label:hover {
   cursor: pointer;
@@ -274,8 +273,11 @@ label {
   justify-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 20px 0; }
+  .questions p {
+    margin: 5px 0 10px;
+    line-height: 20px; }
 
 .question {
   -webkit-box-flex: 0;
@@ -296,13 +298,13 @@ label {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .question:first-of-type {
+    border-top: 1px solid lightgray; }
 
 .symptom {
   width: 60%; }
 
 input[type=submit] {
-  /* background: darkgreen; */
-  /* height: 30vh; */
   padding: 10px 20px;
   font-size: 20px;
   float: right;
@@ -411,12 +413,8 @@ div.predictor {
         font-weight: lighter; }
       .reference a div span {
         font-style: italic; }
-    .reference a:hover {
+    .reference a:hover, .reference a:focus, .reference a:active {
       background: #D2EDC2; }
-    .reference a:focus {
-      background: red; }
-    .reference a:active {
-      background: blue; }
 
 @media (max-width: 1100px) {
   main {
@@ -433,10 +431,15 @@ div.predictor {
   header {
     padding: 50px 5%; }
   .user-answer {
-    width: 40%; }
+    width: 40%;
+    float: right; }
   .question label {
-    float: right;
-    width: 170px; } }
+    float: left;
+    width: 170px; }
+    .question label:nth-of-type(2n) {
+      border-radius: 0 0 5px 5px; }
+    .question label:nth-of-type(2n+1) {
+      border-radius: 5px 5px 0 0; } }
 
 @media (max-width: 660px) {
   .wrapper {
@@ -461,14 +464,18 @@ div.predictor {
     -webkit-box-align: left;
     -ms-flex-align: left;
     align-items: left; }
+    .question label {
+      width: 50%; }
+      .question label:nth-of-type(2n) {
+        border-radius: 0 5px 5px 0; }
+      .question label:nth-of-type(2n+1) {
+        border-radius: 5px 0 0 5px; }
   .symptom, .user-answer {
     width: 100%; }
   .user-answer {
     margin-top: 20px; } }
 
 @media (max-width: 400px) {
-  .question label {
-    width: 50%; }
   .risk-formula-grid div {
     text-align: right;
     padding-left: 15px; }
