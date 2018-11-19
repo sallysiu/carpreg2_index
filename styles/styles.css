@@ -212,7 +212,7 @@ h2 {
   font-weight: bold; }
 
 h3 {
-  margin: 20px 0 0;
+  margin: 20px 0 10px 0;
   font-size: 20px; }
 
 p {
@@ -431,8 +431,7 @@ div.predictor {
   header {
     padding: 50px 5%; }
   .user-answer {
-    width: 40%;
-    float: right; }
+    width: 35%; }
   .question label {
     float: left;
     width: 170px; }
