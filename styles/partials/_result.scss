@@ -45,62 +45,96 @@ input[type=submit]:focus {
 }
 
 
-.risk-formula-grid,
-.risk-result-grid {
-	margin: 40px 0;
-	display: grid;
-	color: #232323;
-	grid-template-columns: 4fr 1fr 1fr; 
-		div {
-			border-bottom: 1px solid lightgrey;
-			padding: 10px 20px;
-		}
-	.risk-formula-grid div:nth-of-type(1),
-	.risk-formula-grid div:nth-of-type(3) {
-		font-weight: bold;
-	}
-}
+// .risk-formula-grid,
+// .risk-result-grid2 {
+// 	margin: 40px 0;
+// 	display: grid;
+// 	color: #232323;
+// 	grid-template-columns: 4fr 1fr 1fr; 
+// 		div {
+// 			border-bottom: 1px solid lightgrey;
+// 			padding: 10px 20px;
+// 		}
+// 	.risk-formula-grid2 div:nth-of-type(1),
+// 	.risk-formula-grid2 div:nth-of-type(3) {
+// 		font-weight: bold;
+// 	}
+// }
  
 
-div.predictor {
-	grid-row: span 2;
-	text-align: left;
-	padding: 30px 20px;
-}
+// div.predictor {
+// 	grid-row: span 2;
+// 	text-align: left;
+// 	padding: 30px 20px;
+// }
 
+// .risk-result-grid2 {
+// 	grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+// 	border-top: 1px solid lightgrey;
+// 	border-left: none;
+// 	border-right: none;
+
+// 	div {
+// 		border-left: 1px solid lightgrey;
+// 		text-align: center;
+// 	}
+
+// 	& :nth-child(1),
+// 	& :nth-child(7) {
+// 		font-weight: bold;
+// 		text-align: left;
+// 		border-left: none;
+// 	}
+// }
+
+
+// @supports (display: grid) {
+.risk-formula-grid,
 .risk-result-grid {
-	grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
-	border-top: 1px solid lightgrey;
-	border-left: none;
-	border-right: none;
-
-	div {
-		border-left: 1px solid lightgrey;
-		text-align: center;
-	}
-
-	& :nth-child(1),
-	& :nth-child(7) {
-		font-weight: bold;
-		text-align: left;
-		border-left: none;
-	}
-}
-
-.risk-result-grid.mobile {
-	display: none;
-	grid-template-columns: 1fr 1fr;
-		div	{
-			text-align: center;
-			font-weight: normal;
-			border-left: none;
-
-			&:nth-of-type(2n) {
-				border-left: 1px solid lightgrey;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	text-align: center;
+	margin: 40px auto;
+	
+	
+	div.container {
+			padding: 10px 20px;
+			width: 35%;
+			padding: 0;
+			margin: 0;
+			&:nth-of-type(2) {
+				div {
+					border-left: 2px solid lightgrey;
+				}
 			}
+
+
 		}
-		& :nth-child(1),
-		& :nth-child(2) {
-			font-weight: bold;
+		.container div {
+			border-bottom: 1px solid lightgrey;
+			padding: 10px;
+			width: 100%;
+			margin: 0;
+			text-align: center;
+
+			&:first-of-type {
+				border-top: 1px solid lightgrey;
+				font-weight: bold;
+				height: 45px;
+				padding: 10px 5px;
+			}
+
 		}
-}
+
+	}
+// }
+
+
+
+
+
+
+
+

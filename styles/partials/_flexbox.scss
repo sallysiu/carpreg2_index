@@ -1,10 +1,10 @@
 .questions {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-content: flex-start;
+	// display: flex;
+	// flex-direction: row;
+	// justify-content: flex-start;
+	// align-content: flex-start;
 	margin-top: 20px;
-	padding: 20px 0;
+	padding: 20px 5%;
 	
 	p {
 	   margin: 5px 0 10px;
@@ -16,13 +16,14 @@
 
 
 .question {
-	flex: 0 1 auto;
+	// flex: 0 1 auto;
 	border-bottom: 1px solid lightgray;
-	padding: 20px 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	padding: 10px 10px 10px 20px;
+	// display: flex;
+	// flex-direction: row;
+	// justify-content: space-between;
+	// align-items: center;
+	width: 100%;
 
 	&:first-of-type {
 		border-top: 1px solid lightgray;
@@ -30,5 +31,7 @@
 }
 
 .symptom {
-	width: 60%;
+	display: inline-block;
+	width: 100%;
+	// border: 2px solid red;
 }
