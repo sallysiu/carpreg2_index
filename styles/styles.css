@@ -226,9 +226,9 @@ footer {
   color: darkslategrey; }
 
 .question input {
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5); }
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); }
 
 .question label {
   display: inline-block;
@@ -307,11 +307,13 @@ input[type=submit]:focus {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  margin: 40px auto; }
+  margin: 40px auto;
+  width: 100%;
+  padding: 0; }
   .risk-formula-grid div.container,
   .risk-result-grid div.container {
+    width: 40%;
     padding: 10px 20px;
-    width: 35%;
     padding: 0;
     margin: 0; }
     .risk-formula-grid div.container:nth-of-type(2) div,
@@ -328,7 +330,6 @@ input[type=submit]:focus {
     .risk-result-grid .container div:first-of-type {
       border-top: 1px solid lightgrey;
       font-weight: bold;
-      height: 45px;
       padding: 10px 5px; }
 
 .reference {
@@ -359,3 +360,79 @@ input[type=submit]:focus {
         font-style: italic; }
     .reference a:hover, .reference a:focus, .reference a:active {
       background: #D2EDC2; }
+
+@media (max-width: 1100px) {
+  main {
+    margin: 0 auto;
+    padding: 50px 5%; } }
+
+@media (max-width: 930px) {
+  .wrapper {
+    width: 85%; }
+  main {
+    padding: 50px 5%; } }
+
+@media (max-width: 870px) {
+  header {
+    padding: 20px 5%; }
+    header h1 {
+      font-size: 1.6rem; }
+    header p {
+      font-size: 16px; }
+  main {
+    padding: 20px 2.5%; }
+  .risk-result-grid div.container {
+    width: 48%; }
+  .risk-result-grid .container div:first-of-type {
+    height: 2.7rem;
+    font-size: 15px; }
+  .reference {
+    margin: 50px 0; } }
+
+@media (max-width: 660px) {
+  main {
+    background: palegoldenrod; }
+  .wrapper {
+    width: 100%;
+    border-radius: 0;
+    padding: 30px 5%; }
+  header {
+    padding: 20px 10px 15px 10px; }
+  .questions {
+    margin-top: 0; }
+  .risk-result-grid div.container {
+    width: 50%; }
+  .risk-result-grid .container div:first-of-type {
+    border: 1px solid blue;
+    height: 3rem;
+    font-size: 14px;
+    padding: 15px 5px; }
+  .reference {
+    margin: 30px 0; } }
+
+@media (max-width: 510px) {
+  main {
+    background: whitesmoke; }
+  .question label {
+    width: 90%; }
+  .question input {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  .symptom, .user-answer {
+    width: 100%; }
+  .risk-result-grid .container div:first-of-type {
+    padding: 8px 5px; }
+  .reference a div i {
+    display: none; } }
+
+@media (max-width: 400px) {
+  main {
+    background: lightblue; }
+  .risk-formula-grid div {
+    text-align: right;
+    padding-left: 15px; }
+    .risk-formula-grid div:nth-of-type(1) {
+      text-align: left; }
+  div.predictor {
+    text-align: left; } }

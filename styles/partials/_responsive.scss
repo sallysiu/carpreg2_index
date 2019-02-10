@@ -17,30 +17,49 @@
 
 
 @media (max-width: 870px ) {
+
 	header {
-		padding: 50px 5%;
-	}
+		padding: 20px 5%;
 
-	.user-answer {
-		width: 35%;
-	}
-
-	.question label {
-		float: left;
-		width: 170px;
-	
-		&:nth-of-type(2n) {
-			border-radius: 0 0 5px 5px;
+		h1 {
+			font-size: 1.6rem;
 		}
-		&:nth-of-type(2n+1) {
-			border-radius: 5px 5px 0 0;
+
+		p {
+			font-size: 16px;
 		}
 	}
 
+	main {
+		padding: 20px 2.5%;
+	}
+
+	.risk-result-grid {
+		div.container {
+			width: 48%;
+		}
+		.container div {
+
+			&:first-of-type {
+				height: 2.7rem;
+				font-size: 15px;
+			}
+		}
+
+	}
+
+	.reference {
+		margin: 50px 0;
+	}
 }
 
 
 @media (max-width: 660px ) {
+
+	main {
+		background: palegoldenrod;
+	}
+	
 	.wrapper {
 		width: 100%;
 		border-radius: 0;
@@ -48,53 +67,80 @@
 	}
 
 	header {
-		padding: 30px 20px 40px 20px;
+		padding: 20px 10px 15px 10px;
 	}
 
 	.questions {
 		margin-top: 0;		
 	}
 
-	.desktop {
-		display: none;
-	}
+	// .desktop {
+	// 	display: none;
+	// }
 
-	.risk-result-grid.mobile {
-		display: grid;
+	.risk-result-grid {
+		div.container {
+			width: 50%;
+		}
+
+		.container div {
+
+			&:first-of-type {
+				border: 1px solid blue;
+				height: 3rem;
+				font-size: 14px;
+				padding: 15px 5px;
+			}
+		}
+
+	}
+	.reference {
+		margin: 30px 0;
 	}
 
 }
 
-@media (max-width: 500px ) {
+@media (max-width: 510px ) {
+
+	main {
+		background: whitesmoke;
+	}
+
 	.question {
-		flex-direction: column;
-		align-items: left;
-
-		label {
-			width: 50%;
-
-			&:nth-of-type(2n) {
-				border-radius: 0 5px 5px 0;
-			}
-	
-			&:nth-of-type(2n+1) {
-				border-radius: 5px 0 0 5px;
-			}
-		}
 		
+		label {
+		width: 90%;
+		}
+		 input {
+		transform: none;
+		}		
 	}
 	
 	.symptom, .user-answer {
 		width: 100%;
 	}
 
-	.user-answer {
-		margin-top: 20px;
+	.risk-result-grid {
+		.container div {
+			&:first-of-type {
+				padding: 8px 5px;
+			}
+		}
+
 	}
+
+	
+	.reference a div i {	
+		display: none;
+	}
+	
 }
 
 @media (max-width: 400px ) {
 	
+	main {
+		background: lightblue;
+	}
 
 
 	.risk-formula-grid div {
