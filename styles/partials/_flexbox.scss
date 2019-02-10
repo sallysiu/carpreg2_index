@@ -3,8 +3,8 @@
 	// flex-direction: row;
 	// justify-content: flex-start;
 	// align-content: flex-start;
-	margin-top: 20px;
-	padding: 20px 5%;
+	// margin-top: 20px;
+	padding: 15px 0 25px 0;
 	
 	p {
 	   margin: 5px 0 10px;
@@ -17,17 +17,15 @@
 
 .question {
 	// flex: 0 1 auto;
-	border-bottom: 1px solid lightgray;
-	padding: 10px 10px 10px 20px;
+	// border-bottom: 1px solid lightgray;
+	padding: 5px 5px 5px 15px;
+	padding: 0 0 0 15px;
 	// display: flex;
 	// flex-direction: row;
 	// justify-content: space-between;
 	// align-items: center;
 	width: 100%;
 
-	&:first-of-type {
-		border-top: 1px solid lightgray;
-	}
 }
 
 .symptom {
