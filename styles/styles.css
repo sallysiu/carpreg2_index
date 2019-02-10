@@ -390,8 +390,8 @@ input[type=submit]:focus {
     margin: 50px 0; } }
 
 @media (max-width: 660px) {
-  main {
-    background: palegoldenrod; }
+  footer {
+    display: none; }
   .wrapper {
     width: 100%;
     border-radius: 0;
@@ -411,8 +411,6 @@ input[type=submit]:focus {
     margin: 30px 0; } }
 
 @media (max-width: 510px) {
-  main {
-    background: whitesmoke; }
   .question label {
     width: 90%; }
   .question input {
@@ -427,8 +425,6 @@ input[type=submit]:focus {
     display: none; } }
 
 @media (max-width: 400px) {
-  main {
-    background: lightblue; }
   .risk-formula-grid div {
     text-align: right;
     padding-left: 15px; }

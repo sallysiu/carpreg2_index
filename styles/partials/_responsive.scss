@@ -56,9 +56,10 @@
 
 @media (max-width: 660px ) {
 
-	main {
-		background: palegoldenrod;
+	footer {
+		display: none;
 	}
+
 	
 	.wrapper {
 		width: 100%;
@@ -74,9 +75,6 @@
 		margin-top: 0;		
 	}
 
-	// .desktop {
-	// 	display: none;
-	// }
 
 	.risk-result-grid {
 		div.container {
@@ -102,9 +100,6 @@
 
 @media (max-width: 510px ) {
 
-	main {
-		background: whitesmoke;
-	}
 
 	.question {
 		
@@ -138,10 +133,6 @@
 
 @media (max-width: 400px ) {
 	
-	main {
-		background: lightblue;
-	}
-
 
 	.risk-formula-grid div {
 		text-align: right;
