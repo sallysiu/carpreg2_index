@@ -190,7 +190,7 @@ header {
   text-align: center; }
   header h1 {
     letter-spacing: 1px;
-    margin-bottom: 14px;
+    margin-bottom: 5px;
     text-shadow: 0 1px 1px white; }
   header p {
     font-size: 18px;
@@ -200,7 +200,7 @@ header {
 main {
   background: white;
   margin: 0 auto 5%;
-  padding: 30px 0; }
+  padding: 30px 2.5%; }
 
 a {
   color: black;
@@ -243,7 +243,7 @@ footer {
   background: #A5DC86; }
 
 .questions {
-  padding: 15px 0 25px 0; }
+  padding: 15px 2% 25px 2%; }
   .questions p {
     margin: 5px 0 10px;
     line-height: 20px; }
