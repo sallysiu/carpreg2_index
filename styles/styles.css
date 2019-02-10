@@ -390,37 +390,56 @@ input[type=submit]:focus {
     margin: 50px 0; } }
 
 @media (max-width: 660px) {
-  footer {
-    display: none; }
   .wrapper {
     width: 100%;
-    border-radius: 0;
     padding: 30px 5%; }
   header {
     padding: 20px 10px 15px 10px; }
+  h2 {
+    font-size: 20px; }
+  h3 {
+    font-size: 18px; }
   .questions {
     margin-top: 0; }
-  .risk-result-grid div.container {
-    width: 50%; }
-  .risk-result-grid .container div:first-of-type {
-    border: 1px solid blue;
-    height: 3rem;
-    font-size: 14px;
-    padding: 15px 5px; }
+  .risk-result-grid {
+    margin: 20px 0 24px 0; }
+    .risk-result-grid div.container {
+      width: 50%; }
+    .risk-result-grid .container div:first-of-type {
+      height: 3rem;
+      font-size: 14px;
+      padding: 15px 5px; }
   .reference {
-    margin: 30px 0; } }
+    margin: 30px 0; }
+  footer {
+    display: none; } }
 
 @media (max-width: 510px) {
+  header {
+    padding: 10px 0; }
+    header h1 {
+      font-size: 1.4rem;
+      margin: 0; }
+    header p {
+      font-size: 14px;
+      margin: 6px 0 0 0; }
+  p {
+    font-size: 13px; }
+  #result p {
+    font-size: 16px; }
   .question label {
-    width: 90%; }
+    width: 90%;
+    font-size: 13px; }
   .question input {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none; }
   .symptom, .user-answer {
     width: 100%; }
-  .risk-result-grid .container div:first-of-type {
-    padding: 8px 5px; }
+  .risk-result-grid {
+    font-size: 13px; }
+    .risk-result-grid .container div:first-of-type {
+      padding: 8px 5px; }
   .reference a div i {
     display: none; } }
 
